@@ -15,22 +15,28 @@ angular.module('app.routes', [])
     abstract:true
   })
 
-  .state('login', {
-    url: '/page6',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
-  })
-
-  .state('signup', {
-    url: '/page7',
-    templateUrl: 'templates/signup.html',
-    controller: 'signupCtrl'
-  })
-
   .state('page', {
     url: '/page8',
     templateUrl: 'templates/page.html',
     controller: 'pageCtrl'
+  })
+
+  .state('histRico', {
+    url: '/page10',
+    templateUrl: 'templates/histRico.html',
+    controller: 'histRicoCtrl'
+  })
+
+  .state('signup', {
+    url: '/page9',
+    templateUrl: 'templates/signup.html',
+    controller: 'signupCtrl'
+  })
+
+  .state('login', {
+    url: '/page11',
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
   })
 
 $urlRouterProvider.otherwise('')
